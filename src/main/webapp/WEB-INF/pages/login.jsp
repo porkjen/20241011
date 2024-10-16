@@ -9,15 +9,13 @@
 
 </head>
 <body class="p-3 mb-2 bg-success-subtle text-success-emphasis">
-	<nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary" >
-	  <div class="container-fluid">
-	    <a class="navbar-brand" href="index.jsp">Lottery</a>
-	  </div>
-	  <div class="d-flex">
-        <a class="btn btn-success" href="logout" role="button">logout</a>
-      </div>
-	</nav>
-	<div style="margin-top: 100px;">
+	<nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.jsp">Lottery</a>
+            <a class="btn btn-success ms-auto" href="logout" role="button">Logout</a>
+        </div>
+    </nav>
+	<div style="margin-top: 10px;">
 		<h1 class="text-success" style="text-align: center;">登入</h1>
 		
 		<%String hint = (String)request.getSession().getAttribute("hint"); %>
